@@ -1,0 +1,38 @@
+{
+  "name": "version-utils",
+  "version": "2.0.0",
+  "description": "Some functions related to versioning",
+  "main": "index.js",
+  "scripts": {
+    "gen-doc": "jsdoc index.js",
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "ci-test": "gulp ci-test",
+    "ci-lint": "gulp ci-lint"
+  },
+  "keywords": [
+    "versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@endor4:/bitnami-utils"
+  },
+  "author": "Bitnami",
+  "license": "",
+  "dependencies": {
+    "lodash": "^4.15.0",
+    "semver": "^5.1.0"
+  },
+  "devDependencies": {
+    "bitnami-gulp-common-tasks": "bitnami/gulp-common-tasks#v2.0.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.11.1",
+    "eslint-config-bitnami": "bitnami/eslint-config-bitnami#v1.0.0",
+    "eslint-plugin-import": "^1.8.1",
+    "gulp": "^3.9.1",
+    "jsdoc": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=4.5.0"
+  }
+}
