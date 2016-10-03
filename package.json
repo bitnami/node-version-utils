@@ -15,16 +15,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "ssh://git@endor4:/bitnami-utils"
+    "url": "https://github.com/bitnami/node-version-utils.git"
   },
   "author": "Bitnami",
-  "license": "",
+  "license": "GPL-2.0",
   "dependencies": {
     "lodash": "^4.15.0",
     "semver": "^5.1.0"
   },
   "devDependencies": {
-    "bitnami-gulp-common-tasks": "bitnami/gulp-common-tasks#v2.0.2",
+    "bitnami-gulp-common-tasks": "bitnami/gulp-common-tasks#v2.0.3",
     "chai": "^3.5.0",
     "eslint": "^2.11.1",
     "eslint-config-bitnami": "bitnami/eslint-config-bitnami#v1.0.0",
