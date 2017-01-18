@@ -50,7 +50,7 @@ function getSemanticVersion(version, options) {
       }
     }
   }
-  let result = `${majorVersion}.${minorVersion}.${patch}`;
+  let result = _.map([majorVersion, minorVersion, patch], (n) => parseInt(n, 10)).join('.');
   if (!options.omitPreRelease && !_.isNull(preRelease)) result += `-${preRelease}`;
   return result;
 }

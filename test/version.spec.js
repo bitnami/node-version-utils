@@ -21,6 +21,10 @@ describe('#getSemanticVersion()', () => {
     expect(vu.getSemanticVersion('1')).to.be.eql('1.0.0');
   });
 
+  it('understand versions with padded numeric digits', () => {
+    expect(vu.getSemanticVersion('2017.01')).to.be.eql('2017.1.0');
+  });
+
   it('throws if it cannot convert', () => {
     const aux = 'thisIsNotAVersion';
     expect(() => vu.getSemanticVersion(aux))
