@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.org/bitnami/node-version-utils.svg?branch=master)](http://travis-ci.org/bitnami/node-version-utils)
+[![Build Status](https://github.com/bitnami/node-version-utils/actions/workflows/main.yml/badge.svg)](https://github.com/bitnami/node-version-utils/actions/workflows/main.yml)
 
 # Version Utils
 
