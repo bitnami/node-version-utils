@@ -26,7 +26,7 @@
     "semver": "^5.1.0"
   },
   "devDependencies": {
-    "bitnami-gulp-common-tasks": "git+https://git@github.com/bitnami/gulp-common-tasks#v3.0.2",
+    "bitnami-gulp-common-tasks": "git+https://git@github.com/bitnami/gulp-common-tasks#v2.0.4",
     "chai": "^3.5.0",
     "eslint": "^2.11.1",
     "eslint-config-bitnami": "git+https://git@github.com/bitnami/eslint-config-bitnami#v1.0.0",

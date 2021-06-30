@@ -19,7 +19,7 @@ const semver = require('semver');
 function getSemanticVersion(version, options) {
   options = _.defaults(options, {omitPreRelease: false});
 
-  const matchedVersion = version.match(/(\d+)\.?([^\[a-zA-Z\-\.\]]+)?\.?(.*)/);
+  const matchedVersion = version.match(/(\d+)\.?([^\[a-zA-Z\-\.\]]+)?\.?(.*)/); // eslint-disable-line no-useless-escape
 
   if (!matchedVersion) {
     throw new Error(`Cannot convert provided version ("${version}") to semantic format`);
@@ -39,7 +39,7 @@ function getSemanticVersion(version, options) {
   } else {
     if (!_.isEmpty(matchedVersion[3])) {
       // Full Versions. F.e: 1.2b1, 1.2.0 or 1.2.3-beta1
-      const parsedPatch = matchedVersion[3].match(/^(\d+)?[\-\._]?(.*)$/);
+      const parsedPatch = matchedVersion[3].match(/^(\d+)?[\-\._]?(.*)$/); // eslint-disable-line no-useless-escape
       if (!_.isUndefined(parsedPatch[1])) {
         // Case 1.2.3 or 1.2.3-beta1
         patch = parsedPatch[1];
